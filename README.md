@@ -1,14 +1,14 @@
 # Azure-Stream-Analytics
 
-##Big Data System's Assignment 4
+## Big Data System's Assignment 4
 
-** You are going to use Azure Stream Analytics to process a data stream of ATM transactions and answer stream queries. The schema of the stream is: (ATMCode, CardNumber, Type, Amount) **
+**You are going to use Azure Stream Analytics to process a data stream of ATM transactions and answer stream queries. The schema of the stream is: (ATMCode, CardNumber, Type, Amount)**
 
 1.Create a trial account at: https://azure.microsoft.com/en-us/
 2.Setup an Event Hub.
 3.Generate a Security Access Signature: https://github.com/sandrinodimattia/RedDog/releases 
 4.Edit Generator.html (open with notepad) and update the CONFIG variables with your security access signature.
-5.Feed the Event Hub with the use of Generator.html (Open Generator.html in a web browser and press the “Send Data” button.)
+5.Feed the Event Hub with the use of Generator.html (Open Generator.html in a web browser and press the â€œSend Dataâ€ button.)
 6.Setup a Storage account.
 7.Upload the Reference Data files to your storage account (the How-To presentation will be updated to include reference data material.)
 8.Setup a Stream Analytics Job.
@@ -17,26 +17,26 @@
 11.Run the following queries:
 
 **Query 1:**
-Show the total “Amount” of “Type = 0” transactions at “ATM Code = 21” of the last 10 minutes. Repeat as new events keep flowing in (use a sliding window).
+Show the total â€œAmountâ€ of â€œType = 0â€ transactions at â€œATM Code = 21â€ of the last 10 minutes. Repeat as new events keep flowing in (use a sliding window).
 
-**Query 2: **
-Show the total “Amount” of “Type = 1” transactions at “ATM Code = 21” of the last hour. Repeat once every hour      (use a tumbling window).
+**Query 2:**
+Show the total â€œAmountâ€ of â€œType = 1â€ transactions at â€œATM Code = 21â€ of the last hour. Repeat once every hour      (use a tumbling window).
 
-**Query 3: **
-Show the total “Amount” of “Type = 1” transactions at “ATM Code = 21” of the last hour. Repeat once every 30 minutes (use a hopping window).
+**Query 3:**
+Show the total â€œAmountâ€ of â€œType = 1â€ transactions at â€œATM Code = 21â€ of the last hour. Repeat once every 30 minutes (use a hopping window).
 
-**Query 4: **
-Show the total “Amount” of “Type = 1” transactions per “ATM Code” of the last one hour (use a sliding window).
+**Query 4:**
+Show the total â€œAmountâ€ of â€œType = 1â€ transactions per â€œATM Codeâ€ of the last one hour (use a sliding window).
 
-**Query 5: **
-Show the total “Amount” of “Type = 1” transactions per “Area Code” of the last hour. Repeat once every hour (use a tumbling window).
+**Query 5:**
+Show the total â€œAmountâ€ of â€œType = 1â€ transactions per â€œArea Codeâ€ of the last hour. Repeat once every hour (use a tumbling window).
 
-**Query 6: **
-Show the total “Amount” per ATM’s “City” and Customer’s “Gender” of the last hour. Repeat once every hour (use a tumbling window).
+**Query 6:**
+Show the total â€œAmountâ€ per ATMâ€™s â€œCityâ€ and Customerâ€™s â€œGenderâ€ of the last hour. Repeat once every hour (use a tumbling window).
 
 **Query 7:**
-Alert (SELECT “1”) if a Customer has performed two transactions of “Type = 1” in a window of an hour (use a sliding window).
+Alert (SELECT â€œ1â€) if a Customer has performed two transactions of â€œType = 1â€ in a window of an hour (use a sliding window).
 
 **Query 8:**
-Alert (SELECT “1”) if the “Area Code” of the ATM of the transaction is not the same as the “Area Code” of the “Card Number” (Customer’s Area Code) - (use a sliding window)
+Alert (SELECT â€œ1â€) if the â€œArea Codeâ€ of the ATM of the transaction is not the same as the â€œArea Codeâ€ of the â€œCard Numberâ€ (Customerâ€™s Area Code) - (use a sliding window)
 
