@@ -4,17 +4,17 @@
 
 **You are going to use Azure Stream Analytics to process a data stream of ATM transactions and answer stream queries. The schema of the stream is: (ATMCode, CardNumber, Type, Amount)**
 
-1.Create a trial account at: https://azure.microsoft.com/en-us/
-2.Setup an Event Hub.
-3.Generate a Security Access Signature: https://github.com/sandrinodimattia/RedDog/releases 
-4.Edit Generator.html (open with notepad) and update the CONFIG variables with your security access signature.
-5.Feed the Event Hub with the use of Generator.html (Open Generator.html in a web browser and press the “Send Data” button.)
-6.Setup a Storage account.
-7.Upload the Reference Data files to your storage account (the How-To presentation will be updated to include reference data material.)
-8.Setup a Stream Analytics Job.
-9.Use the Event Hub + Reference Data Files as Input.
-10.Create a Blob Storage Output.
-11.Run the following queries:
+1. Create a trial account at: https://azure.microsoft.com/en-us/
+2. Setup an Event Hub.
+3. Generate a Security Access Signature: https://github.com/sandrinodimattia/RedDog/releases 
+4. Edit Generator.html (open with notepad) and update the CONFIG variables with your security access signature.
+5. Feed the Event Hub with the use of Generator.html (Open Generator.html in a web browser and press the “Send Data” button.)
+6. Setup a Storage account.
+7. Upload the Reference Data files to your storage account (the How-To presentation will be updated to include reference data material.)
+8. Setup a Stream Analytics Job.
+9. Use the Event Hub + Reference Data Files as Input.
+10. Create a Blob Storage Output.
+11. Run the following queries:
 
 **Query 1:**
 Show the total “Amount” of “Type = 0” transactions at “ATM Code = 21” of the last 10 minutes. Repeat as new events keep flowing in (use a sliding window).
